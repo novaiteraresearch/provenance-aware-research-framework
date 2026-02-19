@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it using the metadata in this file."
+title: "Provenance-Aware Research Framework for High-Integrity Computational Workflows"
+type: software
+authors:
+  - family-names: Furlow
+    given-names: Ariel J.
+    affiliation: Nova Itera Research Group
+repository-code: "https://github.com/novaiteraresearch/provenance-aware-research-framework"
+abstract: >
+  A deterministic, provenance-first architecture for high-integrity computational
+  research workflows. This framework establishes structured schemas, tamper-evident
+  logging, and workflow-level invariants to ensure every computational step is
+  transparent, traceable, and defensible.
+keywords:
+  - provenance
+  - reproducibility
+  - research integrity
+  - computational workflows
+  - auditability
+  - workflow governance
+  - epistemic reliability
+license: Apache-2.0
+version: 0.1.0
+date-released: "2026-02-19"
