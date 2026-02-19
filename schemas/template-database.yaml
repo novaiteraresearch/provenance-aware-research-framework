@@ -1,0 +1,339 @@
+# =============================================================================
+# Nova Itera Reference Template Database
+# =============================================================================
+#
+# AUTHORSHIP & PROVENANCE
+# -----------------------
+# Database Title: Nova Itera Reference Page Template Database
+# Version:        1.0.0
+# Created:        2026-02-19
+# Author:         Ariel J. Furlow
+# Organization:   Nova Itera Research Group
+# License:        Apache-2.0
+#
+# PURPOSE
+# -------
+# Central repository for all reference page templates used across Nova Itera
+# research operations. Stores, indexes, and enables citation of writing styles,
+# tones, formats, and note types — including but not limited to:
+#   - Context Transfer Notes
+#   - Transcript Format templates
+#   - Intelligence Note Style
+#   - Research Briefing formats
+#   - Methodology Summary templates
+#   - Workflow Documentation styles
+#   - Session Handoff Notes
+#   - Audit Trail Entry formats
+#
+# USAGE
+# -----
+# Each entry in `templates[]` conforms to the 30-parameter schema defined in
+# schemas/template-metadata-schema.yaml. Add new entries by appending to the
+# relevant category section. Assign a unique template_id for each entry.
+#
+# TEMPLATE ID CONVENTION: nova-itera/<category>/<slug>@<version>
+# =============================================================================
+
+database_meta:
+  title: "Nova Itera Reference Page Template Database"
+  version: "1.0.0"
+  created: "2026-02-19"
+  author: "Ariel J. Furlow"
+  organization: "Nova Itera Research Group"
+  schema_ref: "schemas/template-metadata-schema.yaml"
+  total_templates: 0
+  last_updated: "2026-02-19"
+  categories:
+    - writing_styles
+    - tones
+    - note_formats
+    - transcript_formats
+    - intelligence_formats
+    - research_formats
+    - workflow_formats
+    - session_formats
+    - audit_formats
+
+# =============================================================================
+# CATEGORY: Note Formats
+# =============================================================================
+note_formats:
+
+  - template_id: "nova-itera/note-formats/context-transfer-note@1.0.0"
+    template_name: "Context Transfer Note"
+    template_version: "1.0.0"
+    creation_date: "2026-02-19"
+    last_modified: "2026-02-19"
+    primary_category: "note_formats"
+    subcategory: "context_management"
+    template_type: "structured_note"
+    domain_applicability:
+      - research_operations
+      - ai_workflow
+      - session_continuity
+    semantic_tags:
+      - context-transfer
+      - handoff
+      - continuity
+      - session-state
+    template_summary: >-
+      A structured note format for transferring full research context, active
+      tasks, open threads, and epistemic state between sessions, agents, or
+      collaborators. Designed to preserve continuity with zero implicit assumptions.
+    use_cases:
+      - Cross-session AI context handoff
+      - Research project state transfer
+      - Delegating active workflows to collaborators
+    ideal_contexts:
+      - End-of-session documentation
+      - Multi-agent research environments
+      - Async research collaboration
+    structural_patterns:
+      - session_state_block
+      - open_threads_list
+      - next_actions_queue
+      - context_artifacts_inventory
+    cognitive_modes:
+      - analytical
+      - organizational
+    required_inputs:
+      - current_session_summary
+      - open_tasks
+      - relevant_artifacts
+    expected_outputs:
+      - context_transfer_document
+    dependencies: []
+    prerequisite_knowledge:
+      - project_context
+    tool_recommendations:
+      - Notion
+      - Markdown editor
+    workflow_stages:
+      - session_close
+      - handoff
+      - session_open
+    integration_points:
+      - session_management
+      - task_tracking
+    cross_references:
+      - nova-itera/note-formats/session-handoff-note@1.0.0
+    automation_potential: "high"
+    complexity_level: "medium"
+    maturity_level: "stable"
+    integrity_score: "high"
+    validation_status: "active"
+    target_audience:
+      - researchers
+      - ai_operators
+    expertise_level_required: "intermediate"
+    estimated_time_requirement: "10-20 minutes"
+    provenance_notes: "Original format developed by Ariel J. Furlow for Nova Itera research operations."
+    attribution: "Ariel J. Furlow, Nova Itera Research Group"
+    modification_history: []
+    license_type: "Apache-2.0"
+    strengths:
+      - Preserves full epistemic state
+      - Enables zero-loss context handoff
+    limitations:
+      - Requires disciplined session documentation
+    optimization_suggestions:
+      - Automate artifact inventory collection
+
+  - template_id: "nova-itera/note-formats/intelligence-note@1.0.0"
+    template_name: "Intelligence Note Style"
+    template_version: "1.0.0"
+    creation_date: "2026-02-19"
+    last_modified: "2026-02-19"
+    primary_category: "note_formats"
+    subcategory: "intelligence_analysis"
+    template_type: "analytical_note"
+    domain_applicability:
+      - research_intelligence
+      - threat_analysis
+      - competitive_research
+    semantic_tags:
+      - intelligence
+      - analysis
+      - structured-reasoning
+      - findings
+    template_summary: >-
+      A formal intelligence note format modeled on analytic tradecraft standards.
+      Presents findings, confidence levels, sourcing, and implications in a
+      structured, defensible format suitable for archival and citation.
+    use_cases:
+      - Research findings documentation
+      - Threat modeling outputs
+      - Competitive landscape analysis
+    ideal_contexts:
+      - High-stakes research documentation
+      - Audit-ready output generation
+    structural_patterns:
+      - key_judgment_block
+      - evidence_chain
+      - confidence_rating
+      - source_attribution
+      - implications_section
+    cognitive_modes:
+      - analytical
+      - critical
+    required_inputs:
+      - research_findings
+      - source_list
+    expected_outputs:
+      - intelligence_note_document
+    dependencies: []
+    prerequisite_knowledge:
+      - analytic_tradecraft_basics
+    tool_recommendations:
+      - Notion
+      - Markdown editor
+    workflow_stages:
+      - analysis
+      - documentation
+      - review
+    integration_points:
+      - research_output
+      - audit_trail
+    cross_references: []
+    automation_potential: "medium"
+    complexity_level: "high"
+    maturity_level: "stable"
+    integrity_score: "high"
+    validation_status: "active"
+    target_audience:
+      - researchers
+      - analysts
+    expertise_level_required: "advanced"
+    estimated_time_requirement: "30-60 minutes"
+    provenance_notes: "Original format developed by Ariel J. Furlow for Nova Itera research operations."
+    attribution: "Ariel J. Furlow, Nova Itera Research Group"
+    modification_history: []
+    license_type: "Apache-2.0"
+    strengths:
+      - High defensibility
+      - Audit-ready structure
+    limitations:
+      - Time-intensive to complete fully
+    optimization_suggestions:
+      - Template pre-population from prior research artifacts
+
+# =============================================================================
+# CATEGORY: Transcript Formats
+# =============================================================================
+transcript_formats:
+
+  - template_id: "nova-itera/transcript-formats/transcript-note@1.0.0"
+    template_name: "Transcript Format"
+    template_version: "1.0.0"
+    creation_date: "2026-02-19"
+    last_modified: "2026-02-19"
+    primary_category: "transcript_formats"
+    subcategory: "session_records"
+    template_type: "transcript_note"
+    domain_applicability:
+      - research_sessions
+      - interviews
+      - ai_conversations
+    semantic_tags:
+      - transcript
+      - record
+      - verbatim
+      - session-log
+    template_summary: >-
+      Structured format for transcribing and annotating conversations, interviews,
+      AI sessions, or research dialogues. Includes speaker attribution, timestamps,
+      annotations, and summary blocks.
+    use_cases:
+      - AI session transcription
+      - Interview documentation
+      - Research dialogue archiving
+    ideal_contexts:
+      - Post-session documentation
+      - Evidence-grade record keeping
+    structural_patterns:
+      - speaker_attribution
+      - timestamp_block
+      - verbatim_content
+      - annotation_margin
+      - summary_block
+    cognitive_modes:
+      - documentary
+      - organizational
+    required_inputs:
+      - raw_conversation_or_audio
+    expected_outputs:
+      - annotated_transcript_document
+    dependencies: []
+    prerequisite_knowledge: []
+    tool_recommendations:
+      - Notion
+      - Markdown editor
+    workflow_stages:
+      - capture
+      - annotation
+      - archiving
+    integration_points:
+      - session_records
+      - provenance_trail
+    cross_references: []
+    automation_potential: "high"
+    complexity_level: "low"
+    maturity_level: "stable"
+    integrity_score: "high"
+    validation_status: "active"
+    target_audience:
+      - researchers
+      - documentarians
+    expertise_level_required: "beginner"
+    estimated_time_requirement: "variable"
+    provenance_notes: "Original format developed by Ariel J. Furlow for Nova Itera research operations."
+    attribution: "Ariel J. Furlow, Nova Itera Research Group"
+    modification_history: []
+    license_type: "Apache-2.0"
+    strengths:
+      - High fidelity record keeping
+      - Supports provenance chains
+    limitations:
+      - Verbatim transcription is time-intensive without automation
+    optimization_suggestions:
+      - Integrate with automated transcription pipelines
+
+# =============================================================================
+# CATEGORY: Writing Styles
+# Templates for this category to be populated as styles are formalized.
+# =============================================================================
+writing_styles: []
+
+# =============================================================================
+# CATEGORY: Tones
+# Templates for this category to be populated as tones are formalized.
+# =============================================================================
+tones: []
+
+# =============================================================================
+# CATEGORY: Research Formats
+# Templates for this category to be populated.
+# =============================================================================
+research_formats: []
+
+# =============================================================================
+# CATEGORY: Workflow Formats
+# Templates for this category to be populated.
+# =============================================================================
+workflow_formats: []
+
+# =============================================================================
+# CATEGORY: Session Formats
+# Templates for this category to be populated.
+# =============================================================================
+session_formats: []
+
+# =============================================================================
+# CATEGORY: Audit Formats
+# Templates for this category to be populated.
+# =============================================================================
+audit_formats: []
+
+# =============================================================================
+# END OF DATABASE — Nova Itera Research Group — Ariel J. Furlow — 2026
+# =============================================================================
