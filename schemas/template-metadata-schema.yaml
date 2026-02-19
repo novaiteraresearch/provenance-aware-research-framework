@@ -1,0 +1,109 @@
+# =============================================================================
+# Template Metadata Schema — 30 Parameter YAML Structure
+# =============================================================================
+#
+# AUTHORSHIP & PROVENANCE DECLARATION
+# ------------------------------------
+# Schema Title:    Template Metadata Schema (30-Parameter Structure)
+# Schema ID:       nova-itera/template-metadata-schema
+# Version:         1.0.0
+# Created:         2026-02-19
+# Author:          Ariel J. Furlow
+# Organization:    Nova Itera Research Group
+# Repository:      https://github.com/novaiteraresearch/provenance-aware-research-framework
+# License:         Apache-2.0
+#
+# INTELLECTUAL PROPERTY NOTICE
+# ----------------------------
+# This schema and its structural design — including the 30-parameter taxonomy,
+# parameter groupings, naming conventions, and semantic organization — are
+# original works conceived and authored by Ariel J. Furlow (Nova Itera Research
+# Group) as part of the Provenance-Aware Research Framework.
+#
+# The design of this schema constitutes a research artifact and intellectual
+# contribution. Any derivative works must provide attribution in accordance
+# with the Apache-2.0 license terms and cite this repository.
+#
+# SCHEMA INTEGRITY HASH (SHA-256 of canonical form):
+#   Pending — to be populated upon first stable release.
+#
+# PARAMETER COUNT: 30 top-level parameters across 9 semantic groups
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# GROUP 1: Core Identification (5 parameters)
+# -----------------------------------------------------------------------------
+template_id: ""
+template_name: ""
+template_version: ""
+creation_date: ""
+last_modified: ""
+
+# -----------------------------------------------------------------------------
+# GROUP 2: Classification & Taxonomy (5 parameters)
+# -----------------------------------------------------------------------------
+primary_category: ""
+subcategory: ""
+template_type: ""
+domain_applicability: []
+semantic_tags: []
+
+# -----------------------------------------------------------------------------
+# GROUP 3: Functional Characteristics (5 parameters)
+# -----------------------------------------------------------------------------
+template_summary: ""
+use_cases: []
+ideal_contexts: []
+structural_patterns: []
+cognitive_modes: []
+
+# -----------------------------------------------------------------------------
+# GROUP 4: Requirements & Specifications (5 parameters)
+# -----------------------------------------------------------------------------
+required_inputs: []
+expected_outputs: []
+dependencies: []
+prerequisite_knowledge: []
+tool_recommendations: []
+
+# -----------------------------------------------------------------------------
+# GROUP 5: Workflow Integration (4 parameters)
+# -----------------------------------------------------------------------------
+workflow_stages: []
+integration_points: []
+cross_references: []
+automation_potential: ""
+
+# -----------------------------------------------------------------------------
+# GROUP 6: Quality & Maturity Metrics (4 parameters)
+# -----------------------------------------------------------------------------
+complexity_level: ""
+maturity_level: ""
+integrity_score: ""
+validation_status: ""
+
+# -----------------------------------------------------------------------------
+# GROUP 7: User & Audience Parameters (3 parameters)
+# -----------------------------------------------------------------------------
+target_audience: []
+expertise_level_required: ""
+estimated_time_requirement: ""
+
+# -----------------------------------------------------------------------------
+# GROUP 8: Governance & Provenance (4 parameters)
+# -----------------------------------------------------------------------------
+provenance_notes: ""
+attribution: ""
+modification_history: []
+license_type: ""
+
+# -----------------------------------------------------------------------------
+# GROUP 9: Performance Characteristics (3 parameters)
+# -----------------------------------------------------------------------------
+strengths: []
+limitations: []
+optimization_suggestions: []
+
+# =============================================================================
+# END OF SCHEMA — Nova Itera Research Group — Ariel J. Furlow — 2026
+# =============================================================================
