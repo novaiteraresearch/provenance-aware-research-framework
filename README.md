@@ -27,3 +27,72 @@ The system formalizes:
 - Support regulatory, scientific, and archival requirements.
 
 ## Repository Structure
+
+```
+project-root/
+│
+├── README.md
+├── LICENSE
+├── CITATION.cff
+├── CHANGELOG.md
+├── version-history.md
+├── SECURITY.md
+├── THREAT_MODEL.md
+├── RISK_REGISTER.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+│
+├── paper/
+│   ├── manuscript.tex
+│   ├── abstract.md
+│   ├── figures/
+│   └── references.bib
+│
+├── docs/
+│   ├── architecture.md
+│   ├── methodology.md
+│   ├── provenance.md
+│   └── glossary.md
+│
+├── schemas/
+│   ├── provenance-schema.yaml
+│   ├── workflow-schema.yaml
+│   └── metadata-schema.json
+│
+├── src/
+│   ├── core/
+│   ├── utils/
+│   └── cli/
+│
+├── notebooks/
+│   ├── evaluation.ipynb
+│   └── examples.ipynb
+│
+├── experiments/
+│   ├── configs/
+│   ├── scripts/
+│   └── results/
+│
+└── diagrams/
+    ├── system-architecture.drawio
+    ├── data-flow.png
+    └── provenance-flow.png
+```
+
+## Documentation
+Extended documentation is available in the `docs/` directory, including:
+- architectural descriptions,
+- methodological definitions,
+- provenance capture specifications,
+- and workflow governance principles.
+
+## Citation
+To cite this framework, use the `CITATION.cff` file included in the repository.
+
+## License
+Distributed under the license specified in `LICENSE`. All contributions must
+adhere to the repository's governance and security policies.
+
+## Contact
+For inquiries regarding methodology, provenance schemas, or integration into
+research OS platforms, please open an issue or contact the maintainer.
